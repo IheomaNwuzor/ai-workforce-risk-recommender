@@ -21,7 +21,7 @@ As artificial intelligence and workflow automation scale across global enterpris
 
 ## 2. Live Application & Portfolio Links
 
-* **Live Interactive Web App**: [Click Here to Access the Streamlit App](https://YOUR-APP-NAME.streamlit.app)
+* **Live Interactive Web App**: [Click Here to Access the Streamlit App](https://ai-workforce-risk-recommender-5lstrddnuxal8vysrrqmjb.streamlit.app)
 * **GitHub Repository**: [https://github.com/IheomaNwuzor/ai-workforce-risk-recommender](https://github.com/IheomaNwuzor/ai-workforce-risk-recommender)
 
 ---
