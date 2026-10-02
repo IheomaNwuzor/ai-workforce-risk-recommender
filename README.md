@@ -19,19 +19,16 @@ As artificial intelligence and workflow automation scale across global enterpris
 
 ---
 
-## 2. Key Features & Business Impact
+## 2. Live Application & Portfolio Links
 
-* **Exploratory Workforce Intelligence**: Interactive analytical dashboards visualizing salary distributions, enterprise AI adoption rates, and geographic/industry displacement trends.
-* **Predictive Automation Risk Scoring**: Multi-class classification pipeline predicting vulnerability based on industry, company size, current role, and tech exposure.
-* **Skill-Gap Reskilling Engine**: Context-aware career matcher providing ranked alternative job roles based on vectorized skill overlap.
-* **Custom Dynamic Filters**: Real-time filtering by minimum desired salary threshold ($USD) and maximum acceptable risk tier.
-* **Automated Career Transition Export**: Direct CSV generation of personalized reskilling plans for career counselors and HR executives.
+* **Live Interactive Web App**: [Click Here to Access the Streamlit App](YOUR_STREAMLIT_APP_URL_HERE) *(Pending Deployment)*
+* **GitHub Repository**: [https://github.com/IheomaNwuzor/ai-workforce-risk-recommender](https://github.com/IheomaNwuzor/ai-workforce-risk-recommender)
 
 ---
 
-## 3. Exploratory Data Analysis (EDA) Highlights
+## 3. Exploratory Workforce Insights (EDA)
 
-Exploratory analysis on workforce dataset (`ai_job_market_insights.csv`) revealed key structural trends driving automation risk:
+Exploratory analysis on the workforce dataset (`ai_job_market_insights.csv`) revealed key structural trends driving automation risk:
 
 * **AI Adoption vs. Risk Correlation**: High enterprise AI adoption (>70%) strongly correlates with elevated automation risk in routine operational and administrative roles.
 * **Salary Vulnerability Inversion**: Mid-tier salary bands ($45,000 - $85,000 USD) show high exposure to displacement, whereas low-skill manual roles and executive strategic roles exhibit lower immediate structural risk.
@@ -39,11 +36,10 @@ Exploratory analysis on workforce dataset (`ai_job_market_insights.csv`) reveale
 
 ---
 
-## 4. Machine Learning Pipeline & Model Performance
+## 4. Automation Risk Prediction & Model Performance
 
-### Pipeline Overview
-* **Preprocessing**: Continuous feature scaling via `StandardScaler`, categorical encoding via `OneHotEncoder` / `OrdinalEncoder`, and missing-value imputation.
-* **Model Selection**: Evaluated Random Forest Classifier, Gradient Boosting, and Logistic Regression. Random Forest delivered optimal cross-validated performance across multi-class risk metrics.
+### Predictive Risk Scoring Engine
+The multi-class classification pipeline predicts an individual worker's vulnerability based on industry, company size, current role, salary band, and technology exposure score.
 
 ### Performance Evaluation Matrix
 
@@ -55,7 +51,6 @@ Exploratory analysis on workforce dataset (`ai_job_market_insights.csv`) reveale
 | **Accuracy** | — | — | — | **87.2%** |
 
 ### Top Feature Importances
-The trained model relies heavily on quantifiable tech exposure and industry dynamics:
 1. `AI_Adoption_Level` (28.4%)
 2. `Automation_Risk_Score` (22.1%)
 3. `Salary_USD` (16.8%)
@@ -64,13 +59,13 @@ The trained model relies heavily on quantifiable tech exposure and industry dyna
 
 ---
 
-## 5. Natural Language Processing (NLP) Recommendation Engine
+## 5. Skill-Gap Reskilling & Career Mapping Engine
 
-To recommend relevant career transitions, worker skills and target role descriptions are sanitized, tokenized, and transformed into high-dimensional vector space:
+To map displaced workers into sustainable, low-risk career transitions, worker skills and target role descriptions are sanitized, tokenized, and transformed into high-dimensional vector space:
 
 $$\text{TF-IDF}(t, d, D) = \text{TF}(t, d) \times \log\left(\frac{\vert{}D\vert{}}{\vert{}\{d \in D : t \in d\}\vert{}}\right)$$
 
-Match confidence is computed using Cosine Similarity between the user's skill vector $\mathbf{A}$ and job database vector $\mathbf{B}$:
+Match confidence is computed using Cosine Similarity between the user's skill vector $\mathbf{A}$ and target job database vector $\mathbf{B}$:
 
 $$\text{Cosine Similarity} = \frac{\mathbf{A} \cdot \mathbf{B}}{\Vert{}\mathbf{A}\Vert{} \Vert{}\mathbf{B}\Vert{}}$$
 
@@ -92,8 +87,15 @@ ai-workforce-risk-recommender/
 │   └── automation_risk_model.pkl   # Serialized Random Forest model artifact
 └── src/
     ├── __init__.py
-    ├── data_loader.py              # Robust data ingestion & schema checking
+    ├── data_loader.py              # Data ingestion & schema checking
     ├── eda.py                      # Visualization & summary stats logic
     ├── model_trainer.py            # Model training & evaluation routines
     ├── preprocessor.py             # Feature encoding & transformation pipelines
     └── recommender.py              # TF-IDF vectorization & filtering engine
+
+
+# Author & License
+
+## Developer: Iheoma Nwuzor
+
+License: MIT License — open-source software, free for evaluation and commercial use.
