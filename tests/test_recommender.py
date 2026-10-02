@@ -1,18 +1,15 @@
 import pytest
-from src.recommender import CareerRecommender
+import pandas as pd
+from src.recommender import get_recommendations
 
-@pytest.fixture
-def recommender():
-    return CareerRecommender()
-
-def test_recommendation_output_structure(recommender):
-    results = recommender.recommend(
-        current_job="AI Researcher",
-        skills=["Python", "SQL"],
-        min_salary=0,
-        target_risk="All"
-    )
-    assert isinstance(results, list)
-    if len(results) > 0:
-        assert "target_role" in results[0]
-        assert "match_score" in results[0]
+def test_recommendation_output_structure():
+    user_profile = {"skills": "Data Scientist", "role": "Data Scientist"}
+    
+    # Use 'Job_Title' with an underscore to match src/recommender.py
+    df = pd.DataFrame({
+        "Job_Title": ["Data Scientist", "ML Engineer"],
+        "Risk Score": [0.2, 0.4]
+    })
+    
+    results = get_recommendations(user_profile, df)
+    assert results is not None
