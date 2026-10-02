@@ -21,7 +21,7 @@ As artificial intelligence and workflow automation scale across global enterpris
 
 ## 2. Live Application & Portfolio Links
 
-* **Live Interactive Web App**: [Click Here to Access the Streamlit App](YOUR_STREAMLIT_APP_URL_HERE) *(Pending Deployment)*
+* **Live Interactive Web App**: [Click Here to Access the Streamlit App](https://YOUR-APP-NAME.streamlit.app)
 * **GitHub Repository**: [https://github.com/IheomaNwuzor/ai-workforce-risk-recommender](https://github.com/IheomaNwuzor/ai-workforce-risk-recommender)
 
 ---
@@ -94,8 +94,9 @@ ai-workforce-risk-recommender/
     └── recommender.py              # TF-IDF vectorization & filtering engine
 
 
-# Author & License
 
-## Developer: Iheoma Nwuzor
 
-License: MIT License — open-source software, free for evaluation and commercial use.
+## 7. Author & License
+
+* **Developer**: Iheoma Nwuzor
+* **License**: MIT License — open-source software, free for evaluation and commercial use.
