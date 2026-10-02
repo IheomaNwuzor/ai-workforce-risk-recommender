@@ -94,9 +94,10 @@ ai-workforce-risk-recommender/
     └── recommender.py              # TF-IDF vectorization & filtering engine
 
 
+---
 
+7. Author & License
 
-## 7. Author & License
+Developer**: Iheoma Nwuzor
 
-* **Developer**: Iheoma Nwuzor
-* **License**: MIT License — open-source software, free for evaluation and commercial use.
+License: MIT License — open-source software, free for evaluation and commercial use.
